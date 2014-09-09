@@ -3,14 +3,95 @@
 <head>
   <title>Post</title>
   <style>
+  html {
+    margin: 50px;
+  }
+  
+  .post {
+    margin: 0 auto;
+    width: 70%;
+    background: lightgrey;
+    padding: 10px;
+    font-family: Sans-Serif;
+  }
+  
+/*  Posts following a post don't get a top padding - to keep the
+  bottom and top paddings from stacking together*/
+  .post + .post {
+    padding-top: 0px;
+  }
+  
+  .post-header {
+    background: white;
+    padding: 20px;
+    margin-bottom: 3px;
+    display: block;
+  }
+  
+  .user-pic {
+    margin-right: 20px;
+    border: 2px solid;
+    border-color: blue;
+  }
+  
+  img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .post-metadata {
+    display: inline-block;
+    position: absolute;
+  }
+  
+  .post-author {
+    color: blue;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .timestamp {
+    color: grey;
+  }
+  
+  article {
+    background: white;
+    padding: 20px;
+  }
   </style>
 </head>
 <body>
   <section class="post">
     <section class="post-header">
-      <img src='' class='user-pic'>
-      <span class="post-author">Jonathan Tamboer</span>
-      <span class="timestamp">3 hours ago</span>
+      <img src='http://simplycatbreeds.org/images/Kitten.jpg' class='user-pic'>
+      <section class="post-metadata">
+        <span class="post-author">Jonathan Tamboer</span><br>
+        <span class="timestamp">3 hours ago</span>
+      </section>
+    </section>
+    <article class="post-body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </article>
+  </section>
+  <section class="post">
+    <section class="post-header">
+      <img src='http://simplycatbreeds.org/images/Kitten.jpg' class='user-pic'>
+      <section class="post-metadata">
+        <span class="post-author">Jonathan Tamboer</span><br>
+        <span class="timestamp">3 hours ago</span>
+      </section>
+    </section>
+    <article class="post-body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </article>
+  </section>
+  <section class="post">
+    <section class="post-header">
+      <img src='http://simplycatbreeds.org/images/Kitten.jpg' class='user-pic'>
+      <section class="post-metadata">
+        <span class="post-author">Jonathan Tamboer</span><br>
+        <span class="timestamp">3 hours ago</span>
+      </section>
     </section>
     <article class="post-body">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
