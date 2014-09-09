@@ -13,20 +13,27 @@ body {
 header {
   background: red;
   color: white;
-  padding: 0px 10%;
+/*  padding: 0px 10%;*/
   border-bottom: solid black;
 }
 
-header > * {
+.header > * {
   display: inline-block;
   height: 30px;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  border-left: solid black;
+  border-right: solid black;
 }
 
 .header-title {
   font-weight: bold;
   margin: 0px;
   padding: 10px 0 0 20px;
-  border-left: solid black;
+/*  border-left: solid black;*/
 }
 
 .header-navbar {
@@ -48,25 +55,53 @@ header > * {
   height: 30px;
 }
 
-.navbar-item:last-child {
-  border-right: solid black;
+#notifications:hover {
+  background: black;
 }
 
-#notifications {
-  
+#notifications:hover #notification-count {
+  background: red;
 }
+
+#notifications:hover .notifications {
+  display: block;
+}
+
 
 #notification-count {
-  
+  /* by id */
+  display: inline-block;
+  background: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
 }
 
 .notifications {
+  /* by class */ 
   display: none;
-  
+  position:absolute;
+  background: white;
+/*  width: 300px;*/
+  color: black;
+/*  border: solid black;*/
+  padding: 0px;
+  margin-left: -23px;
+  margin-top: 10px;
+  z-index: 5;
 }
 
 .notification-item {
-  display: none;
+  /* by class */ 
+  display: block;
+  height: 32px;
+  border: solid black;
+  padding: 0px;
+  margin: 0px
+}
+
+.notification-item:hover {
+  background: gray;
 }
 
 main {
@@ -95,7 +130,6 @@ h1 {
 
 .content {
   display: inline-block;
-  border: thin solid blue;
   width: 55%;
   margin-bottom: auto;
   margin-top: 0;
@@ -109,17 +143,32 @@ h1 {
 }
 
 footer {
-  
+  background: lightgray;
+  color: darkgray;
+  width: 80%;
+  margin: 0 auto 100px auto;
+  border: solid gray;
+  height: 60px;
+  padding: 0px;
 }
 
 .copyright {
-  
+  display: inline-block;
+  margin: 0px;
+  padding: 20px 20px;
 }
 
-.footer-link {
-  
+.footer-links {
+  display: inline-block;
+  float: right;
 }
 
 .footer-link-item {
-  
+  display: inline-block;
+  margin: 0px;
+  padding: 20px 10px;
+}
+
+.footer-link-item:last-child {
+  padding-right: 20px;
 }
