@@ -1,6 +1,7 @@
 html {
   font-family: Sans-Serif;
   padding: 0px;
+  background: lightgray;
 }
 
 body {
@@ -37,13 +38,17 @@ header > * {
 .header-navbar > * {
   display: inline-block;
   margin: 0px;
-  height: 30px;
 }
 
 .navbar-item {
   margin: 0px;
   padding: 10px 20px 0px 20px;
   border-left: solid black;
+  display: inline-block;
+  height: 30px;
+}
+
+.navbar-item:last-child {
   border-right: solid black;
 }
 
@@ -56,6 +61,7 @@ header > * {
 }
 
 .notifications {
+  display: none;
   
 }
 
@@ -66,16 +72,21 @@ header > * {
 main {
   width: 80%;
   margin: 0 auto;
-  
-  
+  background: white;
+  padding: 20px 0;
+  border-left: solid gray;
+  border-right: solid gray;
 }
 
 .sidebar {
-  
+  display:inline-block;
+  width: 20%;
+  padding: 0 20px;
+  border-right: solid lightgrey;
 }
 
-h3 {
-  
+h1 {
+  font-size: 175%;
 }
 
 .sidebar-body {
@@ -83,7 +94,14 @@ h3 {
 }
 
 .content {
-  
+  display: inline-block;
+  border: thin solid blue;
+  width: 55%;
+  margin-bottom: auto;
+  margin-top: 0;
+  height: auto;
+  position: absolute;
+  padding: 0 30px;
 }
 
 .content-body {
