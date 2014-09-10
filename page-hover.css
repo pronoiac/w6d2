@@ -4,9 +4,10 @@ html {
   background: lightgray;
 }
 
-body {
-  padding: 0px;
-  margin: 0 auto;
+body, div, ul, li, header, ol, section, article, nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   
 }
 
@@ -31,44 +32,31 @@ header {
 
 .header-title {
   font-weight: bold;
-  margin: 0px;
   padding: 10px 0 0 20px;
 /*  border-left: solid black;*/
 }
 
 .header-navbar {
   float:right;
-  margin: 0px;
-  padding: 0px;
 }
 
 .header-navbar > * {
   display: inline-block;
-  margin: 0px;
 }
 
 .navbar-item {
-  margin: 0px;
   padding: 10px 20px 0px 20px;
   border-left: solid black;
   display: inline-block;
   height: 30px;
 }
 
-#notifications:hover {
-  background: black;
+.dropdown {
+  background: white;
+  position: relative;
 }
 
-#notifications:hover #notification-count {
-  background: red;
-}
-
-#notifications:hover .notifications {
-  display: block;
-}
-
-
-#notification-count {
+.dropdown #notification-count {
   /* by id */
   display: inline-block;
   background: black;
@@ -77,34 +65,37 @@ header {
   border-radius: 20px;
 }
 
-.notifications {
+.dropdown:hover #notification-count {
+  background: red;
+}
+
+.dropdown .submenu {
   /* by class */ 
   display: none;
-  position:absolute;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
   background: white;
-/*  width: 300px;*/
   color: black;
-/*  border: solid black;*/
-  padding: 0px;
-  margin-left: -23px;
-  margin-top: 10px;
-  z-index: 5;
 }
 
-.notification-item {
-  /* by class */ 
+.dropdown:hover .submenu {
   display: block;
+}
+
+
+.sub-item {
+  /* by class */ 
   height: 32px;
   border: solid black;
-  padding: 0px;
-  margin: 0px
 }
 
-.notification-item:hover {
+.sub-item:hover {
   background: gray;
 }
 
-main {
+.main {
   width: 80%;
   margin: 0 auto;
   background: white;
@@ -129,13 +120,11 @@ h1 {
 }
 
 .content {
+  vertical-align:top;
   display: inline-block;
   width: 55%;
-  margin-bottom: auto;
-  margin-top: 0;
-  height: auto;
-  position: absolute;
   padding: 0 30px;
+  position:absolute;
 }
 
 .content-body {
