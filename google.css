@@ -21,9 +21,11 @@ header ul li {
   padding: 0 5px;
 }
 
-header button {
+header .sign-in {
   background: blue;
   color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 main {
