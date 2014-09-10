@@ -53,6 +53,7 @@ footer {
   margin: 0px;
 }
 
+/* clearfix */
 header:after {
   content: "";
   display: block;

@@ -1,0 +1,77 @@
+html {
+  font-family: Sans-Serif;
+}
+
+header {
+  display: block;
+  background: grey;
+  float: top;
+  padding: 5px 0;
+}
+
+body {
+  margin: 0px;
+}
+
+/* clearfix */
+.toc:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header li {
+  display: inline-block;
+  width: 10%;
+  color: white;
+  
+}
+
+.toc {
+  display: block;
+  border-bottom: thin solid grey;
+  width: 100%;
+}
+
+.toc li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.toc ul {
+  float: right;
+}
+
+.pics {
+  display: block;
+}
+
+.row {
+  display: block;
+}
+
+.col-header {
+  width: 20%;
+}
+
+.col1 {
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  right: 35%;
+}
+
+.col2 {
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+}
+
+.subcol {
+  
+}
+
+.full-row {
+  
+}
